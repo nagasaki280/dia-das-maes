@@ -1,62 +1,87 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feliz Dia das Mães!</title>
   <style>
     body {
+      font-family: 'Arial', sans-serif;
       background: #fff0f5;
-      font-family: 'Comic Sans MS', cursive;
-      color: #5e2b4c;
-      text-align: center;
       margin: 0;
       padding: 0;
+      color: #333;
     }
     header {
-      background-color: #ffe4e1;
-      padding: 20px;
-      border-bottom: 2px solid #f8bbd0;
+      background: linear-gradient(to right, #ffdee9, #b5fffc);
+      text-align: center;
+      padding: 2rem;
     }
-    h1 {
-      font-size: 3em;
-      margin: 0.5em 0;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #d63384;
     }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .foto {
-      width: 250px;
-      border-radius: 15px;
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffffcc;
+      border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
+    .message {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
     footer {
-      background-color: #ffe4e1;
-      padding: 10px;
-      margin-top: 30px;
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🌸 Feliz Dia das Mães! 🌸</h1>
-    <p>Com todo carinho, feito especialmente para você!</p>
+    <h1>Feliz Dia das Mães!</h1>
   </header>
   <main>
-    <div class="galeria">
-      <img src="foto1.jpg" alt="Foto 1" class="foto"/>
-      <img src="foto2.jpg" alt="Foto 2" class="foto"/>
-      <img src="foto3.jpg" alt="Foto 3" class="foto"/>
-      <img src="foto4.jpg" alt="Foto 4" class="foto"/>
-    </div>
+    <section class="message">
+      <p>Mãe, hoje eu só quero te lembrar do quanto você é incrível. A senhora é alguém em que eu me inspiro muito, pois mesmo cansada ou doente você sempre faz de tudo para conseguir agradar os outros, e sempre consegue alegrar o lugar com seu carisma mesmo que alguns dias você esteja estressada.</p>
+      <p>Eu sei o quanto é difícil para a senhora cuidar de mim e das nossas irmãs e sei que nem sempre ajudo como deveria, mas saiba que sempre que você precisar da minha ajuda pode contar comigo. No momento em que você me chamar, eu irei dar meu máximo para ajudar a senhora.</p>
+      <p>Você é nossa base, nosso apoio e nosso exemplo. Obrigado por sempre cuidar da gente e por nos dar amor e carinho todos os dias. Eu vou me dedicar muito para, no futuro, dar uma vida ótima para você e para o meu pai. Saiba que eu amo muito e admiro a senhora, e nada no mundo pode expressar o quanto você significa para a nossa família.</p>
+    </section>
+    <section class="message">
+      <p>Mãe, hoje eu só quero te lembrar do quanto você é incrível. A senhora é alguém em que eu me inspiro muito, pois mesmo cansada ou doente você sempre faz de tudo para conseguir agradar os outros, e sempre consegue alegrar o lugar com seu carisma mesmo que alguns dias você esteja estressada.</p>
+      <p>Eu sei o quanto é difícil para a senhora cuidar de mim e das nossas irmãs e sei que nem sempre ajudo como deveria, mas saiba que sempre que você precisar da minha ajuda pode contar comigo. No momento em que você me chamar, eu irei dar meu máximo para ajudar a senhora.</p>
+      <p>Você é nossa base, nosso apoio e nosso exemplo. Obrigado por sempre cuidar da gente e por nos dar amor e carinho todos os dias. Eu vou me dedicar muito para, no futuro, dar uma vida ótima para você e para o meu pai. Saiba que eu amo muito e admiro a senhora, e nada no mundo pode expressar o quanto você significa para a nossa família.</p>
+    </section>
+    <section class="gallery">
+      <img src="foto1.jpg" alt="Família">
+      <img src="foto2.jpg" alt="Mãe com filhos">
+      <img src="foto3.jpg" alt="Mãe e filho">
+      <img src="foto4.jpg" alt="Mãe sorrindo com passarinho">
+    </section>
   </main>
   <footer>
-    <p>Te amo, mãe! 💖</p>
+    <p>Com todo amor do mundo ❤️</p>
   </footer>
 </body>
 </html>
